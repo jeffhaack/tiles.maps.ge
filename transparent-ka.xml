@@ -88,17 +88,6 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'theatre')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_theatre-20.png" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] = 'theatre')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_theatre-16.png" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'embassy')</Filter>
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_embassy-20.png" />
   </Rule>
@@ -229,17 +218,6 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'theatre')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_theatre-20.png" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] = 'theatre')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_theatre-16.png" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'embassy')</Filter>
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_embassy-20.png" />
   </Rule>
@@ -296,58 +274,53 @@
 <Style name="landuse_icon_label" filter-mode="first" >
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'cafe')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'bar')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'hotel')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'supermarket')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'fuel')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+    <Filter>([type] = 'cafe')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'restaurant')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'hotel')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'bar')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'fuel')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([type] = 'museum')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dx="-12" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([type] = 'theatre')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dx="-12" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'embassy')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dx="-12" wrap-width="20" ><![CDATA[[name:ka]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dx="-12" wrap-width="20" ><![CDATA[[name:ka]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([type] = 'post_office')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="20" ><![CDATA[[name:ka]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="20" ><![CDATA[[name:ka]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'library')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="landuse_icon_label"
@@ -372,57 +345,52 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'bar')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] = 'hotel')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] = 'supermarket')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] = 'fuel')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] = 'cafe')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'restaurant')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'hotel')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'supermarket')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'fuel')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'cafe')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([type] = 'museum')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dx="-12" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([type] = 'theatre')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dx="-12" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'embassy')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dx="-12" wrap-width="20" ><![CDATA[[name:ka]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dx="-12" wrap-width="20" ><![CDATA[[name:ka]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([type] = 'post_office')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="20" ><![CDATA[[name:ka]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="20" ><![CDATA[[name:ka]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'library')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" placement="point" fill="rgba(255, 255, 255, 0.96)" halo-fill="#443355" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:ka]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="poi_label"

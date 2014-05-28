@@ -1135,251 +1135,276 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] != 'hedge') and ([building:levels] &gt;= 20)</Filter>
+    <BuildingSymbolizer height="22" fill="#edeae3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 20)</Filter>
+    <PolygonSymbolizer fill="#edeae3" />
+    <LineSymbolizer stroke="#d9d3c4" stroke-width="0.4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 20)</Filter>
+    <PolygonSymbolizer fill="#edeae3" />
+    <LineSymbolizer stroke="#e3ded3" stroke-width="0.2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 20)</Filter>
+    <PolygonSymbolizer fill="#edeae3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 18)</Filter>
     <BuildingSymbolizer height="20" fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 20)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 18)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#d9d3c4" stroke-width="0.4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 20)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 18)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#e3ded3" stroke-width="0.2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 20)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 18)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 18)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 16)</Filter>
     <BuildingSymbolizer height="18" fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 18)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 16)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#d9d3c4" stroke-width="0.4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 18)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 16)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#e3ded3" stroke-width="0.2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 18)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 16)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 16)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 14)</Filter>
     <BuildingSymbolizer height="16" fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 16)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 14)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#d9d3c4" stroke-width="0.4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 16)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 14)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#e3ded3" stroke-width="0.2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 16)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 14)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 14)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 12)</Filter>
     <BuildingSymbolizer height="14" fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 14)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 12)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#d9d3c4" stroke-width="0.4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 14)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 12)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#e3ded3" stroke-width="0.2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 14)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 12)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 12)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 10)</Filter>
     <BuildingSymbolizer height="12" fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 12)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 10)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#d9d3c4" stroke-width="0.4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 12)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 10)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#e3ded3" stroke-width="0.2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 12)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 10)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 10)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 8)</Filter>
     <BuildingSymbolizer height="10" fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 10)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 8)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#d9d3c4" stroke-width="0.4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 10)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 8)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#e3ded3" stroke-width="0.2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 10)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 8)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 8)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 6)</Filter>
     <BuildingSymbolizer height="8" fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 8)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 6)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#d9d3c4" stroke-width="0.4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 8)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 6)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#e3ded3" stroke-width="0.2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 8)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 6)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 6)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 4)</Filter>
     <BuildingSymbolizer height="6" fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 6)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 4)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#d9d3c4" stroke-width="0.4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 6)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 4)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#e3ded3" stroke-width="0.2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 6)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 4)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 4)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 2)</Filter>
     <BuildingSymbolizer height="4" fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 4)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 2)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#d9d3c4" stroke-width="0.4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 4)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 2)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#e3ded3" stroke-width="0.2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 4)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 2)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 2)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 1)</Filter>
     <BuildingSymbolizer height="2" fill="#edeae3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 2)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 1)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#d9d3c4" stroke-width="0.4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 2)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 1)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
     <LineSymbolizer stroke="#e3ded3" stroke-width="0.2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 2)</Filter>
+    <Filter>([type] != 'hedge') and ([building:levels] &gt;= 1)</Filter>
     <PolygonSymbolizer fill="#edeae3" />
   </Rule>
   <Rule>
@@ -43773,12 +43798,7 @@
 <Style name="landuse_icon" filter-mode="first" >
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([type] = 'swimming_pool') and ([sport] = 'swimming')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-swimming-20.png" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([type] = 'stadium') and ([sport] = 'swimming')</Filter>
+    <Filter>([type] = 'golf_course') and ([sport] = 'swimming')</Filter>
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-swimming-20.png" />
   </Rule>
   <Rule>
@@ -43788,8 +43808,18 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <Filter>([type] = 'golf_course') and ([sport] = 'swimming')</Filter>
+    <Filter>([type] = 'stadium') and ([sport] = 'swimming')</Filter>
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-swimming-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <Filter>([type] = 'swimming_pool') and ([sport] = 'swimming')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-swimming-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'pitch') and ([sport] = 'tennis')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-tennis-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -43808,16 +43838,6 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'pitch') and ([sport] = 'tennis')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-tennis-20.png" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'swimming_pool') and ([sport] = 'golf')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-golf-20.png" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'golf_course') and ([sport] = 'golf')</Filter>
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-golf-20.png" />
   </Rule>
@@ -43833,13 +43853,8 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'golf_course') and ([sport] = 'soccer')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-soccer-20.png" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'swimming_pool') and ([sport] = 'soccer')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-soccer-20.png" />
+    <Filter>([type] = 'swimming_pool') and ([sport] = 'golf')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-golf-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -43853,7 +43868,17 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'pitch') and ([sport] = 'basketball')</Filter>
+    <Filter>([type] = 'swimming_pool') and ([sport] = 'soccer')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-soccer-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'golf_course') and ([sport] = 'soccer')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-soccer-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'swimming_pool') and ([sport] = 'basketball')</Filter>
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-basketball-20.png" />
   </Rule>
   <Rule>
@@ -43863,7 +43888,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([type] = 'swimming_pool') and ([sport] = 'basketball')</Filter>
+    <Filter>([type] = 'pitch') and ([sport] = 'basketball')</Filter>
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-basketball-20.png" />
   </Rule>
   <Rule>
@@ -43882,13 +43907,244 @@
     <Filter>([type] = 'parking')</Filter>
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_parking-14.png" />
   </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'place_of_worship') and ([religion] = 'muslim')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-muslim-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'place_of_worship') and ([religion] = 'muslim')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-muslim-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'place_of_worship') and ([religion] = 'jewish')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-jewish-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'place_of_worship') and ([religion] = 'jewish')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-jewish-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'place_of_worship') and ([religion] = 'christian')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-christian-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'place_of_worship') and ([religion] = 'christian')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-christian-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'cafe')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_cafe-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'cafe')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_cafe-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'bar')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_bar-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'bar')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_bar-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'restaurant')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_restaurant-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'restaurant')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_restaurant-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'hotel')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_lodging-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'hotel')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_lodging-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'supermarket')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_grocery-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'supermarket')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_grocery-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'fuel')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_fuel-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'fuel')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_fuel-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'zoo')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_zoo-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'zoo')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_zoo-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'museum')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_museum-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'museum')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_museum-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'theatre')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_theatre-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'theatre')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_theatre-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'embassy')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_embassy-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'embassy')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_embassy-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'town_hall')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_town-hall-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'town_hall')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_town-hall-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'post_office')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_post-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'post_office')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_post-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'library')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_library-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'library')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_library-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'school')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_school-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'school')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_school-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'college')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_university-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'college')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_university-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'university')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_university-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'university')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_university-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'hospital')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_hospital-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'hospital')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_hospital-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'aerodrome')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_airport-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'aerodrome')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_airport-16.png" />
+  </Rule>
 </Style>
 <Layer name="landuse_icon"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>landuse_icon</StyleName>
     <Datasource>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="table"><![CDATA[( SELECT way, way_area AS area, COALESCE(landuse, leisure, "natural", highway, amenity, tourism) AS type, sport
+       <Parameter name="table"><![CDATA[( SELECT way, way_area AS area, COALESCE(landuse, leisure, "natural", highway, amenity, tourism) AS type, sport, religion
   FROM planet_osm_polygon
   ORDER BY way_area DESC
 ) AS data]]></Parameter>
@@ -43959,8 +44215,58 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'cafe')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_cafe-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'cafe')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_cafe-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'bar')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_bar-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'bar')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_bar-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'restaurant')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_restaurant-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'restaurant')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_restaurant-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'hotel')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_lodging-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'hotel')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_lodging-16.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'supermarket')</Filter>
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_grocery-20.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'supermarket')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_grocery-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -43968,12 +44274,18 @@
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_fuel-20.png" />
   </Rule>
   <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'fuel')</Filter>
+    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_fuel-16.png" />
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'zoo')</Filter>
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_zoo-20.png" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'zoo')</Filter>
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_zoo-16.png" />
@@ -43984,7 +44296,7 @@
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_museum-20.png" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'museum')</Filter>
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_museum-16.png" />
@@ -43995,7 +44307,7 @@
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_theatre-20.png" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'theatre')</Filter>
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_theatre-16.png" />
@@ -44039,7 +44351,7 @@
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_library-20.png" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'library')</Filter>
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_library-16.png" />
@@ -44050,7 +44362,7 @@
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_school-20.png" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'school')</Filter>
     <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_school-16.png" />
@@ -49751,29 +50063,54 @@
     </Datasource>
   </Layer>
 
-<Style name="poi_label" filter-mode="first" >
+<Style name="landuse_icon_label" filter-mode="first" >
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([type] = 'station') and ([station] = 'subway')</Filter>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'supermarket')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'fuel')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'cafe')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'bar')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'restaurant')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([type] = 'hotel')</Filter>
     <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([type] = 'place_of_worship')</Filter>
-    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dx="-12" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dx="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([type] = 'zoo')</Filter>
     <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="20" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([type] = 'museum')</Filter>
     <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dx="-12" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([type] = 'theatre')</Filter>
     <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
@@ -49793,12 +50130,127 @@
     <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="20" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'library')</Filter>
     <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'school')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dx="-12" wrap-width="20" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([type] = 'college')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dx="-12" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([type] = 'university')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dx="-12" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([type] = 'hospital')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Layer name="landuse_icon_label"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>landuse_icon_label</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT way, way_area AS area, COALESCE(landuse, leisure, "natural", highway, amenity, tourism) AS type, sport, religion, name, "name:en", "name:ka"
+  FROM planet_osm_polygon
+  ORDER BY way_area DESC
+) AS data]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+       <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432108.32,5006946.08,5219713.9,5403194.53]]></Parameter>
+       <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
+       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="poi_label" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([type] = 'station') and ([station] = 'subway')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'fuel')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'cafe')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'bar')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'restaurant')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'hotel')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'supermarket')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([type] = 'place_of_worship')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dx="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([type] = 'zoo')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="20" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([type] = 'museum')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dx="-12" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([type] = 'theatre')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'embassy')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dx="-12" wrap-width="20" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([type] = 'town_hall')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="20" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([type] = 'post_office')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="20" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([type] = 'library')</Filter>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'school')</Filter>
     <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dx="-12" wrap-width="20" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
