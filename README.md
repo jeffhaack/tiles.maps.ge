@@ -31,3 +31,4 @@ ssh -i kartulia.pem ubuntu@[SERVER ADDRESS]
 
 ## Notes
 - SHOULD START USING http://openstreetmapdata.com/ instead of processed_p shapefiles
+- Zoom levels above 18 don't work; don't understand why
