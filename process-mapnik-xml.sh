@@ -15,7 +15,8 @@ sed s/"\/Users\/jeff\/Documents\/MapBox\/project\/.*\/layers\/regions\/georgia.s
 
 
 # Edit database settings
-sed s/"<Parameter name=\"user\"><!\[CDATA\[postgres\]\]><\/Parameter>"/"<Parameter name=\"user\"><!\[CDATA\[osm\]\]><\/Parameter><Parameter name=\"password\"><!\[CDATA\[ruka!053\]\]><\/Parameter>"/ <output5.xml >output6.xml
+#sed s/"<Parameter name=\"user\"><!\[CDATA\[postgres\]\]><\/Parameter>"/"<Parameter name=\"user\"><!\[CDATA\[osm\]\]><\/Parameter><Parameter name=\"password\"><!\[CDATA\[ruka!053\]\]><\/Parameter>"/ <output5.xml >output6.xml
+cp output5.xml output6.xml
 
 # Edit icon and font locations
 #sed s/"img\/icon\/"/"\/etc\/mapnik-osm-data\/maps-ge-styles\/icon\/"/ <output6.xml >output7.xml

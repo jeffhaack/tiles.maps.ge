@@ -251,7 +251,7 @@
   ORDER BY way_area DESC
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -426,7 +426,7 @@
   ORDER BY way_area DESC
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -575,7 +575,7 @@
   ORDER BY way_area DESC
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -628,7 +628,7 @@
   WHERE waterway IN ('river', 'canal')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -690,7 +690,7 @@
   WHERE waterway IN ('river', 'canal', 'stream')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -884,7 +884,7 @@
   WHERE waterway IN ('river', 'canal', 'stream', 'ditch', 'drain')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -915,7 +915,7 @@
     AND way_area > 10000
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -945,7 +945,7 @@
     AND way_area > 1000
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -973,7 +973,7 @@
     OR waterway IN ('basin', 'canal', 'mill_pond', 'pond', 'riverbank', 'stream')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -1048,7 +1048,7 @@
   ORDER BY way_area DESC
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -1464,7 +1464,7 @@
   ORDER BY ST_YMin(ST_Envelope(way)) DESC
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="id"><![CDATA[buildings]]></Parameter>
        <Parameter name="project"><![CDATA[MapsgeBasic]]></Parameter>
        <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
@@ -1601,7 +1601,7 @@
   WHERE aeroway IN ('apron', 'runway', 'taxiway')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -15552,7 +15552,7 @@
   ORDER BY layer ASC, render ASC
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -15599,7 +15599,7 @@
   WHERE highway = 'turning_circle'
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -29404,7 +29404,7 @@
   ORDER BY z_order
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -29502,7 +29502,7 @@
   WHERE highway IN ('motorway', 'trunk', 'primary', 'secondary', 'motorway_link', 'trunk_link')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -29558,7 +29558,7 @@
     WHERE highway IN ('motorway', 'trunk')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="id"><![CDATA[roads_low]]></Parameter>
        <Parameter name="project"><![CDATA[MapsgeBasic]]></Parameter>
        <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
@@ -29604,7 +29604,7 @@
   WHERE highway = 'turning_circle'
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -43501,7 +43501,7 @@
   ORDER BY layer ASC, render ASC
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -43790,7 +43790,7 @@
   ORDER BY population DESC NULLS LAST
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -44153,7 +44153,7 @@
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
        <Parameter name="extent"><![CDATA[4974047.97,5110214.23,4996975.41,5128110.51]]></Parameter>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -44431,7 +44431,7 @@
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
        <Parameter name="extent"><![CDATA[4974049.51,5110215.24,4996966.94,5128089.04]]></Parameter>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="id"><![CDATA[pois]]></Parameter>
        <Parameter name="project"><![CDATA[MapsgeBasic]]></Parameter>
        <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
@@ -46380,7 +46380,7 @@
   ORDER BY area DESC
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -49305,7 +49305,7 @@
       AND (name IS NOT NULL OR ref IS NOT NULL)
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -49535,7 +49535,7 @@
     AND highway IN ('primary', 'secondary', 'tertiary')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -49616,7 +49616,7 @@
     AND highway IN ('residential', 'unclassified', 'road', 'living_street', 'unknown')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -49698,7 +49698,7 @@
     AND name IS NOT NULL
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -49774,7 +49774,7 @@
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
        <Parameter name="extent"><![CDATA[4432108.32,5006946.08,5219713.9,5403194.53]]></Parameter>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="id"><![CDATA[building_label]]></Parameter>
        <Parameter name="project"><![CDATA[MapsgeBasic]]></Parameter>
        <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
@@ -49887,7 +49887,7 @@
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
        <Parameter name="extent"><![CDATA[4432108.32,5006946.08,5219713.9,5403194.53]]></Parameter>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -50007,7 +50007,7 @@
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
        <Parameter name="extent"><![CDATA[4974049.51,5110215.24,4996966.94,5128089.04]]></Parameter>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
