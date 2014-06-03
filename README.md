@@ -21,6 +21,7 @@ Clone the repo and run provision-server.sh
 
 5. Run provision-server.sh
 
+	cd tiles.maps.ge
 	./provision-server.sh
 
 #after creating instance, login with:
