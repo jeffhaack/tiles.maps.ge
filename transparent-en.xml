@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Map[]>
-<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" font-directory="/etc/mapnik-osm-data/maps-ge-styles/fonts/" background-color="rgba(128, 128, 128, 0)" maximum-extent="-20037508.34,-20037508.34,20037508.34,20037508.34">
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" font-directory="fonts/" background-color="rgba(128, 128, 128, 0)" maximum-extent="-20037508.34,-20037508.34,20037508.34,20037508.34">
 
 
 <FontSet name="fontset-0">
@@ -36,7 +36,7 @@
     <Datasource>
        <Parameter name="dbname"><![CDATA[osm]]></Parameter>
        <Parameter name="extent"><![CDATA[-20037508.34 -20037508.34 20037508.34 20037508.34]]></Parameter>
-       <Parameter name="file"><![CDATA[/etc/mapnik-osm-data/maps-ge-styles/shp/10m-land.shp]]></Parameter>
+       <Parameter name="file"><![CDATA[shp/10m-land.shp]]></Parameter>
        <Parameter name="id"><![CDATA[land]]></Parameter>
        <Parameter name="project"><![CDATA[foss4g-2011]]></Parameter>
        <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
@@ -54,7 +54,7 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>processed_p</StyleName>
     <Datasource>
-       <Parameter name="file"><![CDATA[/etc/mapnik-osm-data/maps-ge-styles/shp/coastline-good.shp]]></Parameter>
+       <Parameter name="file"><![CDATA[shp/coastline-good.shp]]></Parameter>
        <Parameter name="type"><![CDATA[shape]]></Parameter>
     </Datasource>
   </Layer>
@@ -70,7 +70,7 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>shoreline_300</StyleName>
     <Datasource>
-       <Parameter name="file"><![CDATA[/etc/mapnik-osm-data/maps-ge-styles/shp/shoreline_300.shp]]></Parameter>
+       <Parameter name="file"><![CDATA[shp/shoreline_300.shp]]></Parameter>
        <Parameter name="type"><![CDATA[shape]]></Parameter>
     </Datasource>
   </Layer>
@@ -246,7 +246,7 @@
   ORDER BY way_area DESC
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -421,7 +421,7 @@
   ORDER BY way_area DESC
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -570,7 +570,7 @@
   ORDER BY way_area DESC
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -623,7 +623,7 @@
   WHERE waterway IN ('river', 'canal')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -685,7 +685,7 @@
   WHERE waterway IN ('river', 'canal', 'stream')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -879,7 +879,7 @@
   WHERE waterway IN ('river', 'canal', 'stream', 'ditch', 'drain')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -910,7 +910,7 @@
     AND way_area > 10000
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -940,7 +940,7 @@
     AND way_area > 1000
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -968,7 +968,7 @@
     OR waterway IN ('basin', 'canal', 'mill_pond', 'pond', 'riverbank', 'stream')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -1043,7 +1043,7 @@
   ORDER BY way_area DESC
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -1076,7 +1076,7 @@
     <StyleName>region-outline</StyleName>
     <StyleName>region-inline</StyleName>
     <Datasource>
-       <Parameter name="file"><![CDATA[/etc/mapnik-osm-data/maps-ge-styles/shp/region.shp]]></Parameter>
+       <Parameter name="file"><![CDATA[shp/region.shp]]></Parameter>
        <Parameter name="id"><![CDATA[region]]></Parameter>
        <Parameter name="project"><![CDATA[MapsgeBasic]]></Parameter>
        <Parameter name="srs"><![CDATA[]]></Parameter>
@@ -1121,7 +1121,7 @@
     <StyleName>georgia-outline</StyleName>
     <StyleName>georgia-inline</StyleName>
     <Datasource>
-       <Parameter name="file"><![CDATA[/etc/mapnik-osm-data/maps-ge-styles/shp/georgia.shp]]></Parameter>
+       <Parameter name="file"><![CDATA[shp/georgia.shp]]></Parameter>
        <Parameter name="type"><![CDATA[shape]]></Parameter>
     </Datasource>
   </Layer>
@@ -1255,7 +1255,7 @@
   WHERE aeroway IN ('apron', 'runway', 'taxiway')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -15206,7 +15206,7 @@
   ORDER BY layer ASC, render ASC
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -15253,7 +15253,7 @@
   WHERE highway = 'turning_circle'
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -29058,7 +29058,7 @@
   ORDER BY z_order
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -29156,7 +29156,7 @@
   WHERE highway IN ('motorway', 'trunk', 'primary', 'secondary', 'motorway_link', 'trunk_link')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -29212,7 +29212,7 @@
     WHERE highway IN ('motorway', 'trunk')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="id"><![CDATA[roads_low]]></Parameter>
        <Parameter name="project"><![CDATA[MapsgeBasic]]></Parameter>
        <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
@@ -29258,7 +29258,7 @@
   WHERE highway = 'turning_circle'
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -43155,7 +43155,7 @@
   ORDER BY layer ASC, render ASC
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -43444,7 +43444,7 @@
   ORDER BY population DESC NULLS LAST
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -43453,344 +43453,344 @@
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
     <Filter>([type] = 'golf_course') and ([sport] = 'swimming')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-swimming-20.png" />
+    <PointSymbolizer file="icon/basic_sports-swimming-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
     <Filter>([type] = 'pitch') and ([sport] = 'swimming')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-swimming-20.png" />
+    <PointSymbolizer file="icon/basic_sports-swimming-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
     <Filter>([type] = 'stadium') and ([sport] = 'swimming')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-swimming-20.png" />
+    <PointSymbolizer file="icon/basic_sports-swimming-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
     <Filter>([type] = 'swimming_pool') and ([sport] = 'swimming')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-swimming-20.png" />
+    <PointSymbolizer file="icon/basic_sports-swimming-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'pitch') and ([sport] = 'tennis')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-tennis-20.png" />
+    <PointSymbolizer file="icon/basic_sports-tennis-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'golf_course') and ([sport] = 'tennis')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-tennis-20.png" />
+    <PointSymbolizer file="icon/basic_sports-tennis-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'swimming_pool') and ([sport] = 'tennis')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-tennis-20.png" />
+    <PointSymbolizer file="icon/basic_sports-tennis-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'stadium') and ([sport] = 'tennis')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-tennis-20.png" />
+    <PointSymbolizer file="icon/basic_sports-tennis-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'golf_course') and ([sport] = 'golf')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-golf-20.png" />
+    <PointSymbolizer file="icon/basic_sports-golf-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'stadium') and ([sport] = 'golf')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-golf-20.png" />
+    <PointSymbolizer file="icon/basic_sports-golf-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'pitch') and ([sport] = 'golf')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-golf-20.png" />
+    <PointSymbolizer file="icon/basic_sports-golf-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'swimming_pool') and ([sport] = 'golf')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-golf-20.png" />
+    <PointSymbolizer file="icon/basic_sports-golf-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'pitch') and ([sport] = 'soccer')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-soccer-20.png" />
+    <PointSymbolizer file="icon/basic_sports-soccer-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'stadium') and ([sport] = 'soccer')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-soccer-20.png" />
+    <PointSymbolizer file="icon/basic_sports-soccer-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'swimming_pool') and ([sport] = 'soccer')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-soccer-20.png" />
+    <PointSymbolizer file="icon/basic_sports-soccer-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'golf_course') and ([sport] = 'soccer')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-soccer-20.png" />
+    <PointSymbolizer file="icon/basic_sports-soccer-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'swimming_pool') and ([sport] = 'basketball')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-basketball-20.png" />
+    <PointSymbolizer file="icon/basic_sports-basketball-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'stadium') and ([sport] = 'basketball')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-basketball-20.png" />
+    <PointSymbolizer file="icon/basic_sports-basketball-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'pitch') and ([sport] = 'basketball')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-basketball-20.png" />
+    <PointSymbolizer file="icon/basic_sports-basketball-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'golf_course') and ([sport] = 'basketball')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_sports-basketball-20.png" />
+    <PointSymbolizer file="icon/basic_sports-basketball-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'parking')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_parking-20.png" />
+    <PointSymbolizer file="icon/basic_parking-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'parking')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_parking-14.png" />
+    <PointSymbolizer file="icon/basic_parking-14.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'place_of_worship') and ([religion] = 'muslim')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-muslim-20.png" />
+    <PointSymbolizer file="icon/basic_religious-muslim-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'place_of_worship') and ([religion] = 'muslim')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-muslim-16.png" />
+    <PointSymbolizer file="icon/basic_religious-muslim-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'place_of_worship') and ([religion] = 'jewish')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-jewish-20.png" />
+    <PointSymbolizer file="icon/basic_religious-jewish-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'place_of_worship') and ([religion] = 'jewish')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-jewish-16.png" />
+    <PointSymbolizer file="icon/basic_religious-jewish-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'place_of_worship') and ([religion] = 'christian')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-christian-20.png" />
+    <PointSymbolizer file="icon/basic_religious-christian-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'place_of_worship') and ([religion] = 'christian')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-christian-16.png" />
+    <PointSymbolizer file="icon/basic_religious-christian-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'cafe')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_cafe-20.png" />
+    <PointSymbolizer file="icon/basic_cafe-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'cafe')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_cafe-16.png" />
+    <PointSymbolizer file="icon/basic_cafe-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'bar')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_bar-20.png" />
+    <PointSymbolizer file="icon/basic_bar-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'bar')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_bar-16.png" />
+    <PointSymbolizer file="icon/basic_bar-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'restaurant')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_restaurant-20.png" />
+    <PointSymbolizer file="icon/basic_restaurant-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'restaurant')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_restaurant-16.png" />
+    <PointSymbolizer file="icon/basic_restaurant-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'hotel')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_lodging-20.png" />
+    <PointSymbolizer file="icon/basic_lodging-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'hotel')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_lodging-16.png" />
+    <PointSymbolizer file="icon/basic_lodging-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'supermarket')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_grocery-20.png" />
+    <PointSymbolizer file="icon/basic_grocery-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'supermarket')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_grocery-16.png" />
+    <PointSymbolizer file="icon/basic_grocery-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'fuel')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_fuel-20.png" />
+    <PointSymbolizer file="icon/basic_fuel-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'fuel')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_fuel-16.png" />
+    <PointSymbolizer file="icon/basic_fuel-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'zoo')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_zoo-20.png" />
+    <PointSymbolizer file="icon/basic_zoo-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'zoo')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_zoo-16.png" />
+    <PointSymbolizer file="icon/basic_zoo-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'museum')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_museum-20.png" />
+    <PointSymbolizer file="icon/basic_museum-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'museum')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_museum-16.png" />
+    <PointSymbolizer file="icon/basic_museum-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'theatre')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_theatre-20.png" />
+    <PointSymbolizer file="icon/basic_theatre-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'theatre')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_theatre-16.png" />
+    <PointSymbolizer file="icon/basic_theatre-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'embassy')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_embassy-20.png" />
+    <PointSymbolizer file="icon/basic_embassy-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'embassy')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_embassy-16.png" />
+    <PointSymbolizer file="icon/basic_embassy-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'town_hall')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_town-hall-20.png" />
+    <PointSymbolizer file="icon/basic_town-hall-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'town_hall')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_town-hall-16.png" />
+    <PointSymbolizer file="icon/basic_town-hall-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'post_office')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_post-20.png" />
+    <PointSymbolizer file="icon/basic_post-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'post_office')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_post-16.png" />
+    <PointSymbolizer file="icon/basic_post-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'library')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_library-20.png" />
+    <PointSymbolizer file="icon/basic_library-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'library')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_library-16.png" />
+    <PointSymbolizer file="icon/basic_library-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'school')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_school-20.png" />
+    <PointSymbolizer file="icon/basic_school-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'school')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_school-16.png" />
+    <PointSymbolizer file="icon/basic_school-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'college')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_university-20.png" />
+    <PointSymbolizer file="icon/basic_university-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'college')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_university-16.png" />
+    <PointSymbolizer file="icon/basic_university-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'university')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_university-20.png" />
+    <PointSymbolizer file="icon/basic_university-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'university')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_university-16.png" />
+    <PointSymbolizer file="icon/basic_university-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'hospital')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_hospital-20.png" />
+    <PointSymbolizer file="icon/basic_hospital-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'hospital')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_hospital-16.png" />
+    <PointSymbolizer file="icon/basic_hospital-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'aerodrome')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_airport-20.png" />
+    <PointSymbolizer file="icon/basic_airport-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'aerodrome')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_airport-16.png" />
+    <PointSymbolizer file="icon/basic_airport-16.png" />
   </Rule>
 </Style>
 <Layer name="landuse_icon"
@@ -43807,7 +43807,7 @@
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
        <Parameter name="extent"><![CDATA[4974047.97,5110214.23,4996975.41,5128110.51]]></Parameter>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -43815,260 +43815,260 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'place_of_worship') and ([religion] = 'muslim')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-muslim-20.png" />
+    <PointSymbolizer file="icon/basic_religious-muslim-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'place_of_worship') and ([religion] = 'muslim')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-muslim-16.png" />
+    <PointSymbolizer file="icon/basic_religious-muslim-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'place_of_worship') and ([religion] = 'jewish')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-jewish-20.png" />
+    <PointSymbolizer file="icon/basic_religious-jewish-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'place_of_worship') and ([religion] = 'jewish')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-jewish-16.png" />
+    <PointSymbolizer file="icon/basic_religious-jewish-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'place_of_worship') and ([religion] = 'christian')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-christian-20.png" />
+    <PointSymbolizer file="icon/basic_religious-christian-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'place_of_worship') and ([religion] = 'christian')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_religious-christian-16.png" />
+    <PointSymbolizer file="icon/basic_religious-christian-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'station') and ([station] != 'subway')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_train-station-20.png" />
+    <PointSymbolizer file="icon/basic_train-station-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'station') and ([station] != 'subway')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_train-station-16.png" />
+    <PointSymbolizer file="icon/basic_train-station-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'station') and ([station] = 'subway')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_metro-stop-20.png" />
+    <PointSymbolizer file="icon/basic_metro-stop-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'station') and ([station] = 'subway')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_metro-stop-16.png" />
+    <PointSymbolizer file="icon/basic_metro-stop-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'cafe')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_cafe-20.png" />
+    <PointSymbolizer file="icon/basic_cafe-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'cafe')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_cafe-16.png" />
+    <PointSymbolizer file="icon/basic_cafe-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'bar')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_bar-20.png" />
+    <PointSymbolizer file="icon/basic_bar-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'bar')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_bar-16.png" />
+    <PointSymbolizer file="icon/basic_bar-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'restaurant')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_restaurant-20.png" />
+    <PointSymbolizer file="icon/basic_restaurant-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'restaurant')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_restaurant-16.png" />
+    <PointSymbolizer file="icon/basic_restaurant-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'hotel')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_lodging-20.png" />
+    <PointSymbolizer file="icon/basic_lodging-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'hotel')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_lodging-16.png" />
+    <PointSymbolizer file="icon/basic_lodging-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'supermarket')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_grocery-20.png" />
+    <PointSymbolizer file="icon/basic_grocery-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'supermarket')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_grocery-16.png" />
+    <PointSymbolizer file="icon/basic_grocery-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'fuel')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_fuel-20.png" />
+    <PointSymbolizer file="icon/basic_fuel-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'fuel')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_fuel-16.png" />
+    <PointSymbolizer file="icon/basic_fuel-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'zoo')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_zoo-20.png" />
+    <PointSymbolizer file="icon/basic_zoo-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'zoo')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_zoo-16.png" />
+    <PointSymbolizer file="icon/basic_zoo-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'museum')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_museum-20.png" />
+    <PointSymbolizer file="icon/basic_museum-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'museum')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_museum-16.png" />
+    <PointSymbolizer file="icon/basic_museum-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'theatre')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_theatre-20.png" />
+    <PointSymbolizer file="icon/basic_theatre-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'theatre')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_theatre-16.png" />
+    <PointSymbolizer file="icon/basic_theatre-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'embassy')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_embassy-20.png" />
+    <PointSymbolizer file="icon/basic_embassy-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'embassy')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_embassy-16.png" />
+    <PointSymbolizer file="icon/basic_embassy-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'town_hall')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_town-hall-20.png" />
+    <PointSymbolizer file="icon/basic_town-hall-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'town_hall')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_town-hall-16.png" />
+    <PointSymbolizer file="icon/basic_town-hall-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'post_office')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_post-20.png" />
+    <PointSymbolizer file="icon/basic_post-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'post_office')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_post-16.png" />
+    <PointSymbolizer file="icon/basic_post-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'library')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_library-20.png" />
+    <PointSymbolizer file="icon/basic_library-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'library')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_library-16.png" />
+    <PointSymbolizer file="icon/basic_library-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'school')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_school-20.png" />
+    <PointSymbolizer file="icon/basic_school-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'school')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_school-16.png" />
+    <PointSymbolizer file="icon/basic_school-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'university')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_university-20.png" />
+    <PointSymbolizer file="icon/basic_university-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'university')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_university-16.png" />
+    <PointSymbolizer file="icon/basic_university-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'college')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_university-20.png" />
+    <PointSymbolizer file="icon/basic_university-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'college')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_university-16.png" />
+    <PointSymbolizer file="icon/basic_university-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'hospital')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_hospital-20.png" />
+    <PointSymbolizer file="icon/basic_hospital-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'hospital')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_hospital-16.png" />
+    <PointSymbolizer file="icon/basic_hospital-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'aerodrome')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_airport-20.png" />
+    <PointSymbolizer file="icon/basic_airport-20.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'aerodrome')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_airport-16.png" />
+    <PointSymbolizer file="icon/basic_airport-16.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([type] = 'bus_stop')</Filter>
-    <PointSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/basic_bus-stop-14.png" />
+    <PointSymbolizer file="icon/basic_bus-stop-14.png" />
   </Rule>
 </Style>
 <Layer name="pois"
@@ -44085,7 +44085,7 @@
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
        <Parameter name="extent"><![CDATA[4974049.51,5110215.24,4996966.94,5128089.04]]></Parameter>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="id"><![CDATA[pois]]></Parameter>
        <Parameter name="project"><![CDATA[MapsgeBasic]]></Parameter>
        <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
@@ -45106,7 +45106,7 @@
   ORDER BY area DESC
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -45145,20 +45145,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 8) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 8) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 8) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -45199,20 +45199,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 8) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 8) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 8) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -45286,20 +45286,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 7) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 7) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 7) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -45340,20 +45340,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 7) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 7) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 7) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -45427,20 +45427,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 6) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 6) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 6) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -45481,20 +45481,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 6) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 6) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 6) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -45568,20 +45568,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 5) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 5) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 5) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -45622,20 +45622,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 5) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 5) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 5) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -45709,20 +45709,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 4) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 4) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 4) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -45763,20 +45763,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 4) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 4) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 4) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -45850,20 +45850,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 3) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 3) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 3) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -45904,20 +45904,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 3) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 3) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 3) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -45991,20 +45991,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 2) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 2) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 2) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -46045,20 +46045,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 2) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 2) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 2) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -46132,20 +46132,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 1) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 1) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 1) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -46186,20 +46186,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 1) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 1) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'trunk') and ([reflen] = 1) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -46273,20 +46273,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 8) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 8) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 8) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -46327,20 +46327,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 8) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 8) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 8) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -46414,20 +46414,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 7) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 7) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 7) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -46468,20 +46468,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 7) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 7) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 7) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -46555,20 +46555,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 6) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 6) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 6) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -46609,20 +46609,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 6) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 6) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 6) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -46696,20 +46696,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 5) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 5) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 5) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -46750,20 +46750,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 5) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 5) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 5) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -46837,20 +46837,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 4) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 4) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 4) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -46891,20 +46891,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 4) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 4) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 4) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -46978,20 +46978,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 3) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 3) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 3) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -47032,20 +47032,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 3) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 3) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 3) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -47119,20 +47119,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 2) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 2) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 2) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -47173,20 +47173,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 2) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 2) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 2) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -47260,20 +47260,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 1) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 1) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 1) and ([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -47314,20 +47314,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 1) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 1) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'motorway') and ([reflen] = 1) and ([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -47401,20 +47401,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] = -1) and ([type] = 'trunk')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] = -1) and ([type] = 'trunk')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] = -1) and ([type] = 'trunk')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -47455,20 +47455,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] = -1) and ([type] = 'motorway')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] = -1) and ([type] = 'motorway')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] = -1) and ([type] = 'motorway')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -47504,18 +47504,18 @@
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] = -1)</Filter>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] = -1)</Filter>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] = -1)</Filter>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -47550,20 +47550,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] != 0) and ([type] = 'trunk')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] != 0) and ([type] = 'trunk')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] != 0) and ([type] = 'trunk')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -47604,20 +47604,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] != 0) and ([type] = 'motorway')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] != 0) and ([type] = 'motorway')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] != 0) and ([type] = 'motorway')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -47653,18 +47653,18 @@
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] != 0)</Filter>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] != 0)</Filter>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([reflen] &lt;= 8) and ([oneway] != 0)</Filter>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -47761,20 +47761,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] = -1) and ([type] = 'trunk')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] = -1) and ([type] = 'trunk')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] = -1) and ([type] = 'trunk')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -47805,20 +47805,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] = -1) and ([type] = 'motorway')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] = -1) and ([type] = 'motorway')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] = -1) and ([type] = 'motorway')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -47848,32 +47848,32 @@
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] = -1)</Filter>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] = -1)</Filter>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] = -1)</Filter>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] != 0) and ([type] = 'trunk')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] != 0) and ([type] = 'trunk')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -47897,7 +47897,7 @@
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] != 0) and ([type] = 'trunk')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -47910,14 +47910,14 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] != 0) and ([type] = 'motorway')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] != 0) and ([type] = 'motorway')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -47941,7 +47941,7 @@
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] != 0) and ([type] = 'motorway')</Filter>
     <TextSymbolizer fontset-name="fontset-1" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="1" minimum-distance="60" size="10" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -47953,18 +47953,18 @@
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] != 0)</Filter>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] != 0)</Filter>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] != 0)</Filter>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -48031,7 +48031,7 @@
       AND (name IS NOT NULL OR ref IS NOT NULL)
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -48042,20 +48042,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] = -1) and ([type] = 'primary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] = -1) and ([type] = 'primary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] = -1) and ([type] = 'primary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -48068,20 +48068,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] = -1) and ([type] = 'secondary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] = -1) and ([type] = 'secondary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] = -1) and ([type] = 'secondary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -48094,20 +48094,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] = -1) and ([type] = 'tertiary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] = -1) and ([type] = 'tertiary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] = -1) and ([type] = 'tertiary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -48119,38 +48119,38 @@
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] = -1)</Filter>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] = -1)</Filter>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] = -1)</Filter>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] != 0) and ([type] = 'primary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] != 0) and ([type] = 'primary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] != 0) and ([type] = 'primary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -48163,20 +48163,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] != 0) and ([type] = 'secondary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] != 0) and ([type] = 'secondary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] != 0) and ([type] = 'secondary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -48189,20 +48189,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] != 0) and ([type] = 'tertiary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] != 0) and ([type] = 'tertiary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] != 0) and ([type] = 'tertiary')</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" size="11" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -48214,18 +48214,18 @@
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] != 0)</Filter>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] != 0)</Filter>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] != 0)</Filter>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -48261,7 +48261,7 @@
     AND highway IN ('primary', 'secondary', 'tertiary')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -48272,20 +48272,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" size="9" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.75)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" size="9" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer transform="scale(0.5)" file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" size="9" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
+    <MarkersSymbolizer file="icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
@@ -48298,20 +48298,20 @@
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" size="9" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.75)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" size="9" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer transform="scale(0.5)" placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" size="9" fill="#eeeeee" halo-fill="#444444" halo-radius="2" minimum-distance="60" ><![CDATA[[name:en].replace('Street', 'St').replace('Lane', 'Ln').replace('Avenue', 'Ave').replace('Alley', 'Aly')]]></TextSymbolizer>
-    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="/etc/mapnik-osm-data/maps-ge-styles/icon/oneway.svg" />
+    <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="icon/oneway.svg" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
@@ -48342,7 +48342,7 @@
     AND highway IN ('residential', 'unclassified', 'road', 'living_street', 'unknown')
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -48424,7 +48424,7 @@
     AND name IS NOT NULL
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
@@ -48535,7 +48535,7 @@
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
        <Parameter name="extent"><![CDATA[4432108.32,5006946.08,5219713.9,5403194.53]]></Parameter>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -48655,7 +48655,7 @@
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
        <Parameter name="extent"><![CDATA[4974049.51,5110215.24,4996966.94,5128089.04]]></Parameter>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="user"><![CDATA[osm]]></Parameter><Parameter name="password"><![CDATA[ruka!053]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -48690,7 +48690,7 @@
   srs="+proj=longlat +ellps=WGS84 +no_defs">
     <StyleName>region_label</StyleName>
     <Datasource>
-       <Parameter name="file"><![CDATA[/etc/mapnik-osm-data/maps-ge-styles/shp/region.shp]]></Parameter>
+       <Parameter name="file"><![CDATA[shp/region.shp]]></Parameter>
        <Parameter name="id"><![CDATA[region_label]]></Parameter>
        <Parameter name="project"><![CDATA[MapsgeBasic]]></Parameter>
        <Parameter name="srs"><![CDATA[]]></Parameter>
