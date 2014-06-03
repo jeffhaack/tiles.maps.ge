@@ -6,11 +6,26 @@ This repo contains styles for maps.ge, along with server setup scripts.
 ## Setup
 Clone the repo and run provision-server.sh
 
+1. set up an ubuntu EC2 instance
+2. login
+
+	ssh -i kartulia.pem ubuntu@[SERVER ADDRESS]
+
+3. Install git
+
+	sudo apt-get install git -y
+	
+4. Clone repo
+
 	git clone https://github.com/jeffhaack/tiles.maps.ge.git
+
+5. Run provision-server.sh
+
+	./provision-server.sh
 
 #after creating instance, login with:
 
-ssh -i kartulia.pem ubuntu@ec2-54-76-149-37.eu-west-1.compute.amazonaws.com
+ssh -i kartulia.pem ubuntu@[SERVER ADDRESS]
 
 
 ## Notes
