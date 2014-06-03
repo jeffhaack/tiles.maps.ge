@@ -1,3 +1,4 @@
+#!/bin/bash
 # provision-server.sh
 #
 # This script sets up an Ubuntu (tested with 14.04) server
@@ -45,26 +46,31 @@ psql -U postgres -d $DB_NAME -c "CREATE EXTENSION postgis;"
 # Load data into database (don't have a lot of memory on a micro instance)
 cd ..
 osm2pgsql -U postgres --slim -C 400 --cache-strategy sparse -d $DB_NAME -S georgia.style rawdata.osm.pbf
+sudo touch /var/lib/mod_tile/planet-import-complete
 
+############################################
 # NOT WORRYING ABOUT UPDATING DATABASE
+#sudo apt-get install osmosis
+#sudo /usr/bin/install-postgis-osm-user.sh $DB_NAME www-data
+#sudo mkdir /var/log/tiles
+#sudo chown www-data /var/log/tiles
+#sudo -u www-data /usr/bin/openstreetmap-tiles-update-expire 2012-04-21
+### NEED to get the right state file in /var/lib/mod_tile/.osmosis/ - WOULD BE GOOD TO CREATE AN ALGO FOR THIS
+#sudo sed -i s/"http:\/\/planet.openstreetmap.org\/minute-replicate"/"http:\/\/planet.openstreetmap.org\/replication\/minute\/"/ /var/lib/mod_tile/.osmosis/configuration.txt
+############################################
 
 # Copy a new renderd.conf file into /etc/renderd.conf
 sudo rm /etc/renderd.conf
 sudo cp renderd.conf /etc/renderd.conf
 
-
-# Restart renderd
-sudo touch /var/lib/mod_tile/planet-import-complete
+# Restart renderd & apache
 sudo service renderd restart
+sudo service apache2 restart
 
-# Now do updates to DB
-sudo apt-get install osmosis
-sudo /usr/bin/install-postgis-osm-user.sh $DB_NAME www-data
-sudo mkdir /var/log/tiles
-sudo chown www-data /var/log/tiles
-sudo -u www-data /usr/bin/openstreetmap-tiles-update-expire 2012-04-21
-### NEED to get the right state file in /var/lib/mod_tile/.osmosis/ - WOULD BE GOOD TO CREATE AN ALGO FOR THIS
-sudo sed -i s/"http:\/\/planet.openstreetmap.org\/minute-replicate"/"http:\/\/planet.openstreetmap.org\/replication\/minute\/"/ /var/lib/mod_tile/.osmosis/configuration.txt
+# Copy over test slippymap.html file
+sudo cp slippymap.html /var/www
 
-/var/lib/mod_tile/.osmosis/configuration.txt
+## NOTE THAT THERE MAY BE SOME ISSUES WHICH SEEM TO BE DUE TO NOT ENOUGH RAM ON MICRO EC2.
+## WORKS BETTER IF ONLY ONE TILESET IS CONFIGURED
+
 
