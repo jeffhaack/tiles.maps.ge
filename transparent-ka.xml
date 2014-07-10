@@ -43787,7 +43787,7 @@
     <PointSymbolizer file="icon/basic_airport-20.png" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'aerodrome')</Filter>
     <PointSymbolizer file="icon/basic_airport-16.png" />
@@ -43798,14 +43798,14 @@
     <StyleName>landuse_icon</StyleName>
     <Datasource>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="table"><![CDATA[( SELECT way, way_area AS area, COALESCE(landuse, leisure, "natural", highway, amenity, tourism) AS type, sport, religion
+       <Parameter name="table"><![CDATA[( SELECT way, way_area AS area, COALESCE(landuse, leisure, "natural", highway, amenity, tourism, aeroway) AS type, sport, religion
   FROM planet_osm_polygon
   ORDER BY way_area DESC
 ) AS data]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
-       <Parameter name="extent"><![CDATA[4974047.97,5110214.23,4996975.41,5128110.51]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432108.32,5006946.08,5219713.9,5403194.53]]></Parameter>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
@@ -44060,7 +44060,7 @@
     <PointSymbolizer file="icon/basic_airport-20.png" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'aerodrome')</Filter>
     <PointSymbolizer file="icon/basic_airport-16.png" />
@@ -44083,7 +44083,7 @@
        <Parameter name="key_field"><![CDATA[]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
-       <Parameter name="extent"><![CDATA[4974049.51,5110215.24,4996966.94,5128089.04]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432330.97,5006953.34,5219687.91,5403193.84]]></Parameter>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="id"><![CDATA[pois]]></Parameter>
@@ -45080,7 +45080,7 @@
     <StyleName>area_label</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432108.32,5006946.08,5219713.9,5403194.53]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="id"><![CDATA[landuse_label]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -48412,7 +48412,7 @@
     <StyleName>waterway_label</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432107.61,5006944.86,5219714.12,5403195.12]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="id"><![CDATA[waterway_label]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -48526,7 +48526,7 @@
     <StyleName>landuse_icon_label</StyleName>
     <Datasource>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="table"><![CDATA[( SELECT way, way_area AS area, COALESCE(landuse, leisure, "natural", highway, amenity, tourism) AS type, sport, religion, name, "name:en", "name:ka"
+       <Parameter name="table"><![CDATA[( SELECT way, way_area AS area, COALESCE(landuse, leisure, "natural", highway, amenity, tourism, aeroway) AS type, sport, religion, name, "name:en", "name:ka"
   FROM planet_osm_polygon
   ORDER BY way_area DESC
 ) AS data]]></Parameter>
@@ -48653,7 +48653,7 @@
        <Parameter name="key_field"><![CDATA[]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
-       <Parameter name="extent"><![CDATA[4974049.51,5110215.24,4996966.94,5128089.04]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432330.97,5006953.34,5219687.91,5403193.84]]></Parameter>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>

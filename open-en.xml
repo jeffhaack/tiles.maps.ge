@@ -961,7 +961,7 @@
     <StyleName>water</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432108.32,5006946.08,5219713.9,5403194.53]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="id"><![CDATA[water]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -974,6 +974,7 @@
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
+       <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -1036,7 +1037,7 @@
     <StyleName>landuse_overlays</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432108.32,5006946.08,5219713.9,5403194.53]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="id"><![CDATA[landuse_overlays]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -1049,6 +1050,7 @@
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
+       <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -1455,7 +1457,7 @@
     <StyleName>buildings</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432108.32,5006946.08,5219713.9,5403194.53]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
        <Parameter name="table"><![CDATA[( SELECT way, "building" AS type, "addr:housenumber", "building:levels"
@@ -1590,7 +1592,7 @@
     <StyleName>aeroway</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432107.61,5006944.86,5219714.12,5403195.12]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="id"><![CDATA[aeroway]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -1602,6 +1604,7 @@
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
+       <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -15523,7 +15526,7 @@
     <StyleName>tunnel-pathline</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432107.61,5006944.86,5219714.12,5403195.12]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="id"><![CDATA[tunnel]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -15588,7 +15591,7 @@
     <StyleName>turning_circle_case</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432330.97,5006953.34,5219687.91,5403193.84]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="id"><![CDATA[turning_circle_case]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -15600,6 +15603,7 @@
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
+       <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -29381,7 +29385,7 @@
     <StyleName>roads_high</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432107.61,5006944.86,5219714.12,5403195.12]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="id"><![CDATA[roads_high]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -29494,7 +29498,7 @@
     <StyleName>roads_med</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432111.61,5006966.93,5219713.18,5403190.3]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
        <Parameter name="table"><![CDATA[( SELECT way, highway AS type
@@ -29503,6 +29507,7 @@
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
+       <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -29550,7 +29555,7 @@
     <StyleName>roads_low</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432111.61,5006966.93,5219713.18,5403190.3]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
        <Parameter name="table"><![CDATA[( SELECT way, highway AS type, bridge, tunnel
@@ -29562,6 +29567,7 @@
        <Parameter name="id"><![CDATA[roads_low]]></Parameter>
        <Parameter name="project"><![CDATA[MapsgeBasic]]></Parameter>
        <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
+       <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -29596,7 +29602,7 @@
     <StyleName>turning_circle_fill</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432330.97,5006953.34,5219687.91,5403193.84]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
        <Parameter name="table"><![CDATA[( SELECT way 
@@ -29605,6 +29611,7 @@
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
+       <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -43473,7 +43480,7 @@
     <StyleName>bridge-pathline</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432107.61,5006944.86,5219714.12,5403195.12]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="id"><![CDATA[bridge]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -43502,6 +43509,7 @@
 ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
+       <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -43778,7 +43786,7 @@
     <StyleName>place-small</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432330.97,5006953.34,5219687.91,5403193.84]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="id"><![CDATA[place]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -44133,7 +44141,7 @@
     <PointSymbolizer file="icon/basic_airport-20.png" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'aerodrome')</Filter>
     <PointSymbolizer file="icon/basic_airport-16.png" />
@@ -44144,14 +44152,14 @@
     <StyleName>landuse_icon</StyleName>
     <Datasource>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="table"><![CDATA[( SELECT way, way_area AS area, COALESCE(landuse, leisure, "natural", highway, amenity, tourism) AS type, sport, religion
+       <Parameter name="table"><![CDATA[( SELECT way, way_area AS area, COALESCE(landuse, leisure, "natural", highway, amenity, tourism, aeroway) AS type, sport, religion
   FROM planet_osm_polygon
   ORDER BY way_area DESC
 ) AS data]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
-       <Parameter name="extent"><![CDATA[4974047.97,5110214.23,4996975.41,5128110.51]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432108.32,5006946.08,5219713.9,5403194.53]]></Parameter>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
@@ -44406,7 +44414,7 @@
     <PointSymbolizer file="icon/basic_airport-20.png" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([type] = 'aerodrome')</Filter>
     <PointSymbolizer file="icon/basic_airport-16.png" />
@@ -44424,12 +44432,13 @@
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="table"><![CDATA[( SELECT way, COALESCE(leisure, amenity, tourism, highway, shop, railway, aeroway) AS type, name, "name:en", "name:ka", religion, station
   FROM planet_osm_point
+  WHERE "name:en" NOT IN ('0','false', 'no') AND "name:ka" NOT IN ('0','false', 'no')
 ) AS data
 ]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
-       <Parameter name="extent"><![CDATA[4974049.51,5110215.24,4996966.94,5128089.04]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432330.97,5006953.34,5219687.91,5403193.84]]></Parameter>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
        <Parameter name="id"><![CDATA[pois]]></Parameter>
@@ -49293,7 +49302,7 @@
     <StyleName>motorway_label</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432107.61,5006944.86,5219714.12,5403195.12]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="id"><![CDATA[motorway_label]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -49523,7 +49532,7 @@
     <StyleName>mainroad_label</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432107.61,5006944.86,5219714.12,5403195.12]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="id"><![CDATA[mainroad_label]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -49604,7 +49613,7 @@
     <StyleName>minorroad_label</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432107.61,5006944.86,5219714.12,5403195.12]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="id"><![CDATA[minorroad_label]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -49686,7 +49695,7 @@
     <StyleName>waterway_label</StyleName>
     <Datasource>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432107.61,5006944.86,5219714.12,5403195.12]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
        <Parameter name="id"><![CDATA[waterway_label]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -49785,32 +49794,32 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'supermarket')</Filter>
-    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" minimum-padding="50" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'fuel')</Filter>
-    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" minimum-padding="50" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'cafe')</Filter>
-    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" minimum-padding="50" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'bar')</Filter>
-    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" minimum-padding="50" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'restaurant')</Filter>
-    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" minimum-padding="50" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([type] = 'hotel')</Filter>
-    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" minimum-padding="50" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -49878,7 +49887,7 @@
     <StyleName>landuse_icon_label</StyleName>
     <Datasource>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="table"><![CDATA[( SELECT way, way_area AS area, COALESCE(landuse, leisure, "natural", highway, amenity, tourism) AS type, sport, religion, name, "name:en", "name:ka"
+       <Parameter name="table"><![CDATA[( SELECT way, way_area AS area, COALESCE(landuse, leisure, "natural", highway, amenity, tourism, aeroway) AS type, sport, religion, name, "name:en", "name:ka"
   FROM planet_osm_polygon
   ORDER BY way_area DESC
 ) AS data]]></Parameter>
@@ -49900,32 +49909,32 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'fuel')</Filter>
-    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" minimum-padding="50" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'cafe')</Filter>
-    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" minimum-padding="50" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'bar')</Filter>
-    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" minimum-padding="50" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'restaurant')</Filter>
-    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" minimum-padding="50" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'hotel')</Filter>
-    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" minimum-padding="50" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'supermarket')</Filter>
-    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" ><![CDATA[[name:en]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-4" placement="point" fill="#443355" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" size="9" dy="11" wrap-width="25" minimum-padding="50" ><![CDATA[[name:en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -50000,12 +50009,13 @@
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="table"><![CDATA[( SELECT way, COALESCE(leisure, amenity, tourism, highway, shop, railway, aeroway) AS type, name, "name:en", "name:ka", station
   FROM planet_osm_point
+  WHERE "name:en" NOT IN ('0','false', 'no') AND "name:ka" NOT IN ('0','false', 'no')
 ) AS data
 ]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[]]></Parameter>
        <Parameter name="extent_cache"><![CDATA[auto]]></Parameter>
-       <Parameter name="extent"><![CDATA[4974049.51,5110215.24,4996966.94,5128089.04]]></Parameter>
+       <Parameter name="extent"><![CDATA[4432330.97,5006953.34,5219687.91,5403193.84]]></Parameter>
        <Parameter name="dbname"><![CDATA[georgia]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
